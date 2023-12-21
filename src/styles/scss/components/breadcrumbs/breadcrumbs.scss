@@ -1,0 +1,7 @@
+@use "./../../common/variables" as var;
+.breadcrumbs{
+  padding: 12px 0;
+ .products{
+   color: var.$color-link;
+ }
+}

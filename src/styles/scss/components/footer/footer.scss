@@ -1,0 +1,12 @@
+@use "./../../common/variables"as var;
+.footer {
+  padding-top: 42px;
+  padding-bottom: 22px;
+  background-color: #26282C;
+  .address {
+    color: var.$color-text-footer;
+  }
+  .icon-color {
+    color: var.$bg-color-btn;
+  }
+}

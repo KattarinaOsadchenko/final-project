@@ -1,0 +1,22 @@
+@use "./../../common/variables" as var;
+.main-content {
+  &__left {
+  border-radius: 16px;
+ }
+  &__right {
+    border-radius: 16px;
+    padding: 18px 0;
+    h5, a {
+      font-size: var.$fs-md;
+      font-weight: var.$fw-bold;
+      line-height: 22px;
+    }
+  }
+  .accordion-title {
+    color: var.$color-text-accordiontitle;
+    font-size: var.$fs-md;
+    font-weight: var.$fw-bold;
+    line-height: 22px;
+  }
+
+}
