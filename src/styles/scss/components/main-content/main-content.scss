@@ -14,34 +14,36 @@
     padding: 18px 0;
     .card {
       width: 100%;
-
-    }
-    //.hover-image-wrapper {
-    //  max-height: 330px;
-    //  min-height: 330px;
+    //  .hover-image-wrapper {
+    //    overflow: hidden;
+    //    max-height: 330px;
+    //    min-height: 330px;
     //
-    //  img {
-    //    position: absolute;
-    //    transition: .3s;
-    //
-    //  &:first-child {
-    //    right: 0;
-    //  }
-    //    &:last-child {
-    //      right: -100%;
-    //    }
-    //    &:hover .hover-image-wrapper {
+    //    img {
+    //      position: absolute;
+    //      transition: .3s;
     //
     //      &:first-child {
-    //        right: 100%;
-    //      }
-    //      &:last-child {
     //        right: 0;
+    //      }
+    //
+    //      &:last-child {
+    //        right: -100%;
     //      }
     //    }
     //  }
+    //  &:hover .hover-image-wrapper img {
     //
-    //}
+    //    &:first-child {
+    //      right: 100%;
+    //    }
+    //    &:last-child {
+    //      right: 0;
+    //    }
+    //  }
+    //
+    //
+    }
     .card-absolute{
       top: 10px;
       right: 10px;
