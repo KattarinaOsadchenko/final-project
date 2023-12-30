@@ -1,0 +1,5 @@
+@use './variables' as var;
+
+@mixin slideAnimation($duration) {
+  animation: slideAnimation var.$duration ease-in-out;
+}

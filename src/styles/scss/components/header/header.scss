@@ -12,14 +12,14 @@
 
   }
    .nav-link{
-     color: var.$color-text-main;
+     color: var.$main-text-color;
      font-size: var.$fs-sm;
      font-weight: var.$fw-regular;
    }
   .navbar-brand{
     width: 100%;
     max-width: 262px;
-    height: 56px;
+    height: 100%;
     padding-right: 15px;
   }
   &-bottom {

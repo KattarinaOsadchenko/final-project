@@ -4,7 +4,8 @@
   "description": "Online Shop Template",
   "main": "src/pages/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-compile-home-page": "sass --watch ./src/styles/scss/home-page.scss:./src/styles/css/home-page.css"
   },
   "author": "Kateryna Osadchenko",
   "license": "ISC",
