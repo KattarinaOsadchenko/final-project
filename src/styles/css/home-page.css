@@ -20106,7 +20106,7 @@ textarea.form-control-lg {
 }
 body {
   background-color: #F4F4F4;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
   font-size: 13px;
   font-weight: 400;
 }
@@ -20164,11 +20164,11 @@ h1, .h1 {
   right: 10px;
 }
 .controls__search_form {
-  border-radius: 54px;
   height: 56px;
-  border-color: #F4F4F4;
-  padding-left: 40px;
   padding-right: 70px;
+  padding-left: 40px;
+  border-color: #F4F4F4;
+  border-radius: 54px;
 }
 .controls__search_form [placeholder] {
   padding-left: 20px;
@@ -20178,11 +20178,11 @@ h1, .h1 {
 }
 .controls .button-display {
   width: 100%;
-  border-radius: 40px;
   padding: 16px 25px;
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
+  border-radius: 40px;
 }
 .controls .dropdown-toggle::after {
   margin-left: 77px;
@@ -20197,11 +20197,32 @@ h1, .h1 {
   color: #BDBDBE;
 }
 .main-content__right {
-  border-radius: 16px;
   padding: 18px 0;
+  border-radius: 16px;
 }
 .main-content__right .card {
   width: 100%;
+}
+.main-content__right .hover-image-wrapper {
+  overflow: hidden;
+  max-height: 330px;
+  min-height: 330px;
+}
+.main-content__right .hover-image-wrapper img {
+  position: absolute;
+  transition: 0.3s;
+}
+.main-content__right .hover-image-wrapper img:first-child {
+  right: 0;
+}
+.main-content__right .hover-image-wrapper img:last-child {
+  right: -100%;
+}
+.main-content__right:hover .hover-image-wrapper img:first-child {
+  right: 100%;
+}
+.main-content__right:hover .hover-image-wrapper img:last-child {
+  right: 0;
 }
 .main-content__right .card-absolute {
   top: 10px;
@@ -20213,10 +20234,10 @@ h1, .h1 {
   line-height: 22px;
 }
 .main-content .accordion-title {
-  color: #2268B4;
   font-size: 17px;
   font-weight: 700;
   line-height: 22px;
+  color: #2268B4;
 }
 
 .footer {
@@ -20228,6 +20249,23 @@ h1, .h1 {
   color: #BDBDBE;
 }
 .footer .icon-color {
+  color: #FFF;
+}
+.footer__list {
+  list-style-type: none;
+}
+.footer__list a {
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  color: #BDBDBE;
+}
+.footer__title {
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 22px;
   color: #FFF;
 }
 

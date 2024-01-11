@@ -3,33 +3,42 @@
 .controls{
   &__search {
     padding-left: 22px;
-    [type=submit] {
+
+    [type="submit"] {
       top: 13px;
       right: 10px;
     }
+
     &_form{
-      border-radius: 54px;
       height: 56px;
-      border-color: var.$bg-color-main;
-      padding-left: 40px;
       padding-right: 70px;
+      padding-left: 40px;
+
+      border-color: var.$bg-color-main;
+      border-radius: 54px;
+
     [placeholder]{
       padding-left: 20px;
     }
     }
   }
+
   &__display {
     width: 100%;
   }
+
   .button-display {
     width: 100%;
+    padding:16px 25px;
+
+    font-size: var.$fs-sm;
+    font-weight: var.$fw-regular;
+    font-style: normal;
+
     //text-align: start;
     border-radius: 40px;
-    padding:16px 25px;
-    font-size: var.$fs-sm;
-    font-style: normal;
-    font-weight: var.$fw-regular;
     }
+
   .dropdown-toggle::after {
     margin-left: 77px;
   }
