@@ -1,7 +1,7 @@
 {
   "name": "finalproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "Heillel final project",
   "main": "index.js",
   "scripts": {
     "test": "test",

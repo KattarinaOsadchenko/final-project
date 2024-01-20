@@ -1,0 +1,27 @@
+@use "./../../common/variables" as var;
+.header {
+  background-color: #ccc;
+
+  &-top {
+    &__lang{
+      &-title {
+        color: var.$color-text-basic;
+        font-size: var.$fs-xs;
+        font-weight: var.$fw-bold;
+        text-transform: uppercase;
+        padding: 5px 7px;
+        border-radius: 8px;
+      }
+      input:checked + span {
+        background: #F0145A;
+      }
+    }
+  }
+  .navbar-nav{
+    gap: 15px;
+  }
+  .navbar-nav a {
+    color: var.$color-text-basic;
+    font-weight: var.$fw-bold;
+  }
+}

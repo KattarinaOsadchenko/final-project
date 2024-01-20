@@ -2,10 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Kateryna Osadchenko">
+    <title>Hlegals</title>
+    <link rel="stylesheet" href="./../../src/styles/css/home-page.css">
 </head>
 <body>
-
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-top__lang">
+                        <label>
+                            <input type="radio" name="lang" class="d-none">
+                            <span class="header-top__lang-title">Ук</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="lang" class="d-none">
+                            <span class="header-top__lang-title">Ру</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="lang" checked class="d-none">
+                            <span class="header-top__lang-title">En</span>
+                        </label>
+                    </div>
+                    <div class="header-top__address">
+                        <a href="">
+                            Kyiv, Mechnikova str, 14/1
+                        </a>
+                    </div>
+                    <div class="header-top__phone"></div>
+                    <div class="header-top__socials"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="./../assets/img/svg/logo.svg" alt="Hlegals" title="hlegals">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
 <script src="./../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
