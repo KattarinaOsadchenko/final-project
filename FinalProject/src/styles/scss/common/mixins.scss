@@ -1,0 +1,5 @@
+@mixin bg_img_center($url, $bg_size: cover) {
+  @extend %bg_no_repeat__center;
+  background-image: url($url);
+  background-size: $bg_size;
+}

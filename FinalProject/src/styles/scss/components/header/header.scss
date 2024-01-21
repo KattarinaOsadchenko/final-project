@@ -4,10 +4,13 @@
   padding-top: 50px;
   position: absolute;
   width: 100%;
+  max-height: var.$header-height;
+  height: var.$header-height;
 
   &-top {
     margin-bottom: -30px;
     z-index: 1;
+    position: relative;
 
     &__wrapper > div:not(:last-child) {
       display: flex;

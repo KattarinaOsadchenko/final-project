@@ -1,0 +1,4 @@
+@function get_path($path) {
+  $assets_path: './../../assets/';
+  @return $assets_path + $path;
+}
