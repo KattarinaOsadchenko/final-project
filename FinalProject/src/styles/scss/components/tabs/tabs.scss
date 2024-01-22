@@ -1,0 +1,63 @@
+@use './../../common/variables' as var;
+@use './../../common/bootstrap-config' as bc;
+
+.tabs {
+  padding: 60px 0;
+
+  &__main {
+    gap: 60px;
+
+    .nav, .nav-tabs {
+      width: 100%;
+      max-width: 375px;
+    }
+  }
+  .nav, .nav-tabs {
+    width: 100%;
+    max-width: 375px;
+  }
+  &__item {
+    font-size: var.$fs-lg;
+    font-weight: var.$fw-bold;
+    color: var.$color-text-grey;
+    width: 100%;
+    max-width: 374px;
+
+    &:hover {
+      color: #F0145A;
+    }
+
+  }
+  &__border {
+    position: relative;
+    width: 4px; /* Ширина линии */
+    height: 274px; /* Высота линии */
+    background-color: rgba(255, 255, 255, 0.30); /* Цвет линии */
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -1px; /* Расстояние от левого края */
+      width: 4px; /* Ширина псевдоэлемента, которая будет выглядеть как линия */
+      height: 100%; /* Высота псевдоэлемента, равная высоте линии */
+      max-height:304px;
+      background-color: rgba(255, 255, 255, 0.30); /* Цвет псевдоэлемента (цвет линии) */
+    }
+  }
+  &__content {
+    gap: 30px;
+    color: var.$color-text-basic;
+
+    &-title {
+      font-size: 30px;
+      font-weight: var.$fw-bold;
+    }
+
+    &-description {
+      font-size: 19px;
+      font-weight: var.$fw-regular;
+      line-height: 30px;
+    }
+  }
+}
