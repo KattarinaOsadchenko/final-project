@@ -1,0 +1,14 @@
+@use './../../common/variables' as var;
+
+.team {
+  padding: 60px 0;
+
+ &__card-text {
+   background:  linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: var.$fs-lg;
+   font-weight: var.$fw-bold;
+ }
+}

@@ -1,5 +1,4 @@
 @use './../../common/variables' as var;
-@use './../../common/bootstrap-config' as bc;
 
 .tabs {
   padding: 60px 0;
@@ -12,10 +11,7 @@
       max-width: 375px;
     }
   }
-  .nav, .nav-tabs {
-    width: 100%;
-    max-width: 375px;
-  }
+
   &__item {
     font-size: var.$fs-lg;
     font-weight: var.$fw-bold;
@@ -46,7 +42,7 @@
     }
   }
   &__content {
-    gap: 30px;
+
     color: var.$color-text-basic;
 
     &-title {
