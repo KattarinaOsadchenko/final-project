@@ -3,6 +3,10 @@
 .team {
   padding: 60px 0;
 
+  &__photo-first {
+    @include bg_img_center(get_path('img/svg/team_first.svg'))
+  }
+
  &__card-text {
    background:  linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
    background-clip: text;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.banner {
+.team__photo-first, .banner {
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -20246,7 +20246,7 @@ body {
   max-width: 375px;
 }
 .tabs__item {
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 700;
   color: #B3B3BA;
   width: 100%;
@@ -20309,6 +20309,10 @@ body {
 
 .team {
   padding: 60px 0;
+}
+.team__photo-first {
+  background-image: url("./../../assets/img/svg/team_first.svg");
+  background-size: cover;
 }
 .team__card-text {
   background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
