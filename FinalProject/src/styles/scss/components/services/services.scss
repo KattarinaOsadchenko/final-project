@@ -1,3 +1,6 @@
+@use './../../common/variables' as var;
+@use './../../common/extends' as *;
+
 .services {
   &__service {
     display: flex;
@@ -5,6 +8,14 @@
     gap: 30px;
     flex-direction: column;
   }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: var.$fs-sm;
+    font-weight: var.$fw-bold;
+    color: var.$main-color;
+  }
+
 
   &__icon span {
     display: inline-block;

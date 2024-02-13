@@ -1,18 +1,75 @@
 @use './../../common/variables' as var;
+@use './../../common/mixins' as *;
+@use './../../common/extends' as *;
 
 .team {
   padding: 60px 0;
 
   &__photo-first {
-    @include bg_img_center(get_path('img/svg/team_first.svg'))
+    @include bg_img_center(get_path('img/svg/team_first.svg'));
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
   }
 
- &__card-text {
-   background:  linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-size: var.$fs-lg;
-   font-weight: var.$fw-bold;
- }
+  &__photo-second {
+    @include bg_img_center(get_path('img/svg/team/team_second.svg'));
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  &__photo-third {
+    @include bg_img_center(get_path('img/svg/team/team_third.svg'));
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .carousel-item {
+    height: 100%;
+    min-height: 344px;
+    width: 100%;
+  }
+
+  .card-body {
+    background-color: #F5F5FA;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 100%;
+    min-height: 344px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  a {
+    color: var.$main-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: var.$fw-bold;
+  }
+
+   &__card-text {
+     @extend %gradient_color_text;
+     font-size: var.$fs-lg;
+     font-weight: var.$fw-bold;
+   }
+
+  &__card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-indicators {
+    transform: translateY(200%);
+    color: var.$main-color;
+  }
+
+  button {
+    border-width: 1px;
+    border-radius: 50%;
+    background-color: var.$main-color;
+    color: var.$main-color;
+  }
+
+  &__name {
+    font-weight: var.$fw-bold;
+  }
 }

@@ -1,0 +1,65 @@
+@use "./../../common/variables" as var;
+
+.footer {
+  background-color: var.$color-bg-grey;
+
+  //&__wrapper > div:not(:last-child) {
+  //
+  //  margin-right: 6px;
+  //
+  //  &:after {
+  //    content: '';
+  //    display: inline-block;
+  //    border-radius: 50%;
+  //    width: 6px;
+  //    height: 6px;
+  //    background: var.$color-text-grey;
+  //    margin-left: 6px;
+  //  }
+  //}
+
+
+&__location {
+
+  &-address p {
+    color: var.$main-blue-color;
+    font-size: var.$fs-md;
+    margin-right: 12px;
+  }
+
+  &-map a {
+    text-transform: uppercase;
+    color: var.$main-color;
+    font-weight: var.$fw-bold;
+    font-size: var.$fs-xs;
+  }
+}
+
+  &__contact {
+
+    &-social a {
+      color: var.$main-color;
+      font-size: var.$fs-lg;
+      margin-right: 12px;
+    }
+
+    &-phone a {
+      font-size: var.$fs-md;
+      font-weight: var.$fw-bold;
+      color: var.$main-blue-color;
+      margin-right: 12px;
+    }
+
+    &-email a {
+      font-size: var.$fs-md;
+      font-weight: var.$fw-bold;
+      color: var.$main-color;
+    }
+  }
+
+  &__copyright {
+    color: var.$color-text-grey;
+    font-size: var.$fs-md;
+  }
+
+}

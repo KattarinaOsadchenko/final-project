@@ -1,0 +1,16 @@
+@use './../../common/variables' as var;
+
+.customers {
+  padding-top: 60px;
+
+  h4 {
+    color: var.$main-blue-color;
+    font-size: var.$fs-sm;
+    font-weight: var.$fw-bold;
+    padding-bottom: 30px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+.tabs{
+@media (max-width: 992px) {
+ &__main {
+   flex-direction: column;
+ }
+
+  &__border {
+    display: none;
+  }
+  &__catalog, #myTab {
+    justify-content: space-around!important;
+
+    border-bottom: solid  rgba(255, 255, 255, 0.3) !important;
+  }
+}
+}

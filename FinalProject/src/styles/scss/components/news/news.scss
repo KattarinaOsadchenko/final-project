@@ -1,0 +1,47 @@
+@use './../../common/variables' as var;
+@use './../../common/mixins' as *;
+@use './../../common/extends' as *;
+
+.news {
+  padding: 30px 0;
+  background-color: var.$color-bg-grey;
+
+  h2 {
+    padding-bottom: 30px;
+  }
+
+  &__link {
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: var.$fs-sm;
+    font-weight: var.$fw-bold;
+    color: var.$main-color;
+  }
+  &__card {
+
+    &-title {
+      font-weight: var.$fw-bold;
+      font-size: var.$fs-md;
+    }
+
+    &-date {
+      text-transform: uppercase;
+      color: var.$color-text-grey;
+      font-size: var.$fs-xs;
+      font-weight: var.$fw-bold;
+    }
+    &-text {
+
+
+
+
+      ::before {
+          content: '';
+          display: inline-block;
+          height: 4px;
+          background-color: #e6e6f0;
+          width:100%;
+      }
+    }
+  }
+}

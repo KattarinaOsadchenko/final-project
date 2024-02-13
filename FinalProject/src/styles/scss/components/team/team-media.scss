@@ -1,0 +1,8 @@
+.team {
+  @media (max-width: 768px) {
+    &__card {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

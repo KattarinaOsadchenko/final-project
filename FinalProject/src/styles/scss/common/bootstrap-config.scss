@@ -1,6 +1,15 @@
 @use './../common/variables' as var;
 $link-color: var.$color-text-grey;
 $nav-tabs-link-active-bg: none;
+$card-spacer-x: 30px;
+$card-spacer-y: 30px;
+$card-title-color: var.$main-color;
+$body-secondary-color: var.$color-text-grey;
+$carousel-indicator-active-bg: var.$main-color;
+
+$carousel-indicator-width: 15px;
+$carousel-indicator-height: 15px;
+$carousel-indicator-active-bg: var.$main-color;
 
 //linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%)
 $nav-tabs-border-width: none;

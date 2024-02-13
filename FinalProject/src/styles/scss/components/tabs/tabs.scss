@@ -26,28 +26,28 @@
   }
   &__border {
     position: relative;
-    width: 4px; /* Ширина линии */
-    height: 274px; /* Высота линии */
-    background-color: rgba(255, 255, 255, 0.30); /* Цвет линии */
+    width: 4px;
+    height: 274px;
+    background-color: rgba(255, 255, 255, 0.30);
 
     &::before {
       content: "";
       position: absolute;
       top: 0;
-      left: -1px; /* Расстояние от левого края */
-      width: 4px; /* Ширина псевдоэлемента, которая будет выглядеть как линия */
-      height: 100%; /* Высота псевдоэлемента, равная высоте линии */
+      left: -1px;
+      width: 4px;
+      height: 100%;
       max-height:304px;
-      background-color: rgba(255, 255, 255, 0.30); /* Цвет псевдоэлемента (цвет линии) */
+      background-color: rgba(255, 255, 255, 0.30);
     }
   }
   &__content {
-
     color: var.$color-text-basic;
 
     &-title {
       font-size: 30px;
       font-weight: var.$fw-bold;
+      padding-bottom: 15px;
     }
 
     &-description {

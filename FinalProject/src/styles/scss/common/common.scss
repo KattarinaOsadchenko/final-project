@@ -37,3 +37,8 @@ body{
   }
 
 }
+h2 {
+  font-weight: var.$fw-bold;
+  font-size: var.$fs-lg;
+  @extend %gradient_color_text;
+}
