@@ -1,0 +1,11 @@
+.customers {
+  @media (max-width: 576px) {
+    .customers__wrapper {
+
+      justify-content: center!important;
+    }
+  }
+  @media (min-width: 1400px) {
+    padding-bottom: 60px;
+  }
+}

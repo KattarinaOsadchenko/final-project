@@ -8,9 +8,10 @@
     display: none;
   }
   &__catalog, #myTab {
-    justify-content: space-around!important;
 
     border-bottom: solid  rgba(255, 255, 255, 0.3) !important;
+    justify-content: space-between!important;
+
   }
 }
 }

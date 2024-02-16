@@ -6,16 +6,20 @@
       align-items: center!important;
     }
     &__location {
-      align-items: center!important;
+      justify-content: center!important;
     }
 
   }
 
-  @media (max-width: 375px){
+  @media (max-width: 392px){
 
-    &__contact {
+    &__wrapper {
       flex-direction: column!important;
     }
+    &__location {
+      flex-direction: column!important;
+      align-items: center!important;
 
+    }
   }
 }
